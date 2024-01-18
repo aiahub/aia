@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>AiA Store</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      
+   </head>
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            AiA Hub
+         </div>
+         <div class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+      <div class="background">
+        <p class="subtop">Elevate Your Style</p><br>
+        <h1> Dress to impress express your style!</h1>
+       <br>
+       <button class="mainbtn" onclick="onprogreSS()">Get In Touch!</button>
+      </div>
+      <div class="container">
+         <div class="one">
+            <br>
+            <img src="delivery.png" width="17%">
+            <h3>Free Shipping</h3>
+            <h6>Over Order 99/-</h6>
+         </div>
+         <div class="two">
+            <br>
+            <img src="support.png" width="17%">
+            <h3>24/7 Support</h3>
+            <h6>Get Support All Day</h6>
+         </div>
+         <div class="three">
+            <br>
+            <img src="quality.png" width="17%">
+            <h3>Quality</h3>
+            <h6>Branded & Quality Products</h6>
+         </div>
+      </div><br>
+      <br><br><br>
+      <h1 class="headone"><font>Explore</font> The Real Style!</h1>
+      <center><hr class="headunder"></center>
+      <br>
+      <div class="containera"><a href="shirt.html">
+         <div class="first">
+            <img  src="mickey.webp" width="100%">
+            <br>
+             <h3>Branded <font>Shirts</font></h3>
+         </div></a><a href="tshirt.html">
+         <div class="second">
+            <img  src="jujutsu.webp" width="100%">
+            <br>
+             <h3>Modern <font>T-shirts</font></h3>
+
+         </div></a><a href="hoodie.html">
+         <div class="third">
+            <img  src="hoodie.webp" width="100%">
+            <br>
+             <h3>Loose Fit <font>Hoodies</font></h3>
+         </div></a>
+      </div><br><br>
+      <center><button onclick="onprogreSS()" class="fmore">Find More Style!</button></center>
+      
+      <br><br><br>
+      <br>
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+      <script>
+         function onprogreSS(){
+            alert("This Website Is Under Construction.We Will Back Soon!");
+         }
+      </script>
+   </body>
+</html>

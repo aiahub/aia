@@ -1,0 +1,44 @@
+.box{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left_box{
+    width:600px;
+    height: 500px;
+}
+.right_box{
+    width:600px;
+    height: 500px;
+}
+h2,h1{
+    margin: 0%;
+}
+h1{
+    margin-top: 45px;
+}
+font{
+    color:#ff3d00;
+}
+h2{
+    font-weight: 300;
+}
+#mail_input,#name_input,#password_input{
+    width:300px;
+    height:30px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: grey;
+}
+button{
+    width:310px;
+    height:35px;
+    background-color: #ff3d00;
+    color: aliceblue;
+    border-style: solid;
+    border-color: #ff3d00;
+    border-radius: 7px;
+}
+p{
+    color:rgb(90, 85, 85);
+}
