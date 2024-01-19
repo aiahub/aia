@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Order Page</title>
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+           AiA Hub
+        </div>
+        <div class="nav-items">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Blogs</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Feedback</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+     <br>
+    <div class="mainbox">
+         <div class="left_box">
+            <img class="order_page_image" src="mickey.webp" width="100%">
+         </div>
+         <div class="right_box">
+            <br>
+            <h2>OFFICIAL DISNEY MERCHANDISE
+            </h2>
+            <br>
+            <h4>Men's Green & Black Hang Checked Oversized Shirt</h4>
+            <br>
+            <button id="rating"><img src="star.png" width="60%" >4.5</button>
+            <br><br>
+            <h2 class="prize">₹1299 <p class="actual_rate"> ₹2999</p><p class="off">55% OFF</p></h2>
+            <p class="inclusive">inclusive of all taxes
+            </p>
+            <br>
+            <button class="shipping_box">Free Shipping Over ₹999</button>
+            <br>
+            <BR>
+            <h6><img src="location.svg" width="3%">CHECK DELIVERY AVAILABILITY</h6>
+            <input id="delivery_pin" type="number" placeholder="Enter Your Pincode" ><button onclick="Pincodevalidation()" class="check">Check</button><br>
+            <span id="messege"></span>
+            <br>
+            <img  src="pro.svg" width="3%"><h5 class="desc">Product description</h5><img src="arrow.png" width="20%>
+         </div>
+    </div>
+    <script>
+        function Pincodevalidation(){
+            pin=document.getElementById("delivery_pin").value;
+            if(pin<99999)
+            {
+                document.getElementById("messege").innerHTML="Invalid Pincode Enter Your Excact Pincode";
+            }
+        }
+        function description(){
+            pin=document.getElementById("delivery_pin").value;
+            if(pin<99999)
+            {
+                document.getElementById("messege").innerHTML="Invalid Pincode Enter Your Excact Pincode";
+            }
+        }
+    </script>
+</body>
+</html>
