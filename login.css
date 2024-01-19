@@ -5,11 +5,11 @@
 }
 .left_box{
     width:600px;
-    height: 500px;
+    height: 600px;
 }
 .right_box{
     width:600px;
-    height: 500px;
+    height: 600px;
 }
 h2,h1{
     margin: 0%;
@@ -41,4 +41,7 @@ button{
 }
 p{
     color:rgb(90, 85, 85);
+}
+.login_image{
+    margin-left:-50px;
 }
