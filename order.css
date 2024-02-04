@@ -61,3 +61,23 @@ font-size: small;
     margin-left: 30px;
     margin-top: -20px;
 }
+summary{
+    font-size: 14px;
+    font-weight: 500;
+}
+.p_desc{
+    font-size: 12px;
+    padding-top: 3px;
+}
+.order_button{
+    width:180px;
+    height: 28px;
+    background-color: #ff3d00;
+    color:white;
+}
+.add_bag{
+    width: 180px;
+    height: 28px;
+    background-color: #171c24;
+    color: white;
+}
