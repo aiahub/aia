@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="order.css">
     <link rel="stylesheet" href="style.css">
     <title>Order Page</title>
+    <script src="https://kit.fontawesome.com/3239114496.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -45,7 +46,7 @@
             <br>
             <h4>Men's Green & Black Hang Checked Oversized Shirt</h4>
             <br>
-            <button id="rating"><img src="star.png" width="60%" >4.5</button>
+            <button id="rating"><i class="fa-solid fa-star" style="color: rgba(159, 159, 11, 0.795);"></i> 4.5</button>
             <br><br>
             <h2 class="prize">₹1299 <p class="actual_rate"> ₹2999</p><p class="off">55% OFF</p></h2>
             <p class="inclusive">inclusive of all taxes
@@ -54,11 +55,30 @@
             <button class="shipping_box">Free Shipping Over ₹999</button>
             <br>
             <BR>
-            <h6><img src="location.svg" width="3%">CHECK DELIVERY AVAILABILITY</h6>
+            <h6><i class="fa-solid fa-location-dot"></i> CHECK DELIVERY AVAILABILITY</h6>
             <input id="delivery_pin" type="number" placeholder="Enter Your Pincode" ><button onclick="Pincodevalidation()" class="check">Check</button><br>
             <span id="messege"></span>
             <br>
-            <img  src="pro.svg" width="3%"><h5 class="desc">Product description</h5><img src="arrow.png" width="20%>
+            <details>
+               <summary>Product description</summary>
+               <p class="p_desc">Infuse your style with playful nostalgia in our Hang Men's Green & Black Checked Oversized Shirt. Style this Official Disney t-shirt with denim and sneakers for a casual look.
+               </p>
+               <p class="p_desc"><i>Country of Origin</i> - India<br>Manufactured By - Bewakoof Brands Pvt Ltd, Sairaj logistic hub #A5,BMC pipeline road, Opposite all saints high school, Amane, Bhiwandi, Thane, Maharashtra 421302<br>Packed By - Bewakoof Brands Pvt Ltd, Sairaj logistic hub #A5,BMC pipeline road, Opposite all saints high school, Amane, Bhiwandi, Thane, Maharashtra 421302<br>Commodity - Men's Shirt<br>Product Specifications<br>
+                  *Oversized fit - Super Loose On Body Thoda Hawa Aane De<br>*100% Cotton - Soft & light weight fabric
+               </p>
+            </details>
+            <details>
+               <summary>Know More About Return & Exchange</summary>
+               <p class="p_desc">15 Days Returns & Exchange<br>Easy returns upto 15 days of delivery. Exchange available on select pincodes
+               </p>
+            </details><br>
+            <i class="fa-solid fa-credit-card"></i> Secure Payment<br>
+            <i class="fa-solid fa-arrows-rotate"></i> Easy Return & Exchage<br>
+            <i class="fa-solid fa-medal"></i> Genuine Quality Products<br><br>
+            <button class="order_button"><i class="fa-solid fa-bolt"></i> Buy Now</button>  <button class="add_bag"><i class="fa-solid fa-bag-shopping"></i> Add To Bag</button>
+            <br><br>
+            <h3 class="review_head">Review</h3>
+            <i class="fa-solid fa-user-tie" style="padding-top: 7px;"></i> Aswin Sudheesh <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br><q style="font-size: small;">Wow! What A Fantastic Product I Like It Thank You AiA Hub❤️</q>
          </div>
     </div>
     <script>
