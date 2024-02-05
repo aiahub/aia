@@ -84,9 +84,13 @@
     <script>
         function Pincodevalidation(){
             pin=document.getElementById("delivery_pin").value;
-            if(pin<99999)
+            if(pin>=100000 && pin<=999999)
             {
-                document.getElementById("messege").innerHTML="Invalid Pincode Enter Your Excact Pincode";
+                document.getElementById("messege").innerHTML="Deliver Within 3-5 Working Days";
+            }
+            else
+            {
+               document.getElementById("messege").innerHTML="Currently Product Is Unavailable For Your Location";
             }
         }
         function description(){
