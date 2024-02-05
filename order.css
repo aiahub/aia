@@ -81,3 +81,22 @@ summary{
     background-color: #171c24;
     color: white;
 }
+@media (max-width: 450px){
+    .mainbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .order_page_image{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left_box{
+        width:auto;
+
+    }
+    .right_box{
+        width:auto;
+    }
+}
