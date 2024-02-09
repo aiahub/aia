@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Order Page</title>
+    <script src="https://kit.fontawesome.com/3239114496.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+           AiA Hub
+        </div>
+        <div class="nav-items">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Blogs</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Feedback</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+     <br>
+    <div class="mainbox">
+         <div class="left_box">
+            <img class="order_page_image" src="tis.webp" width="100%">
+         </div>
+         <div class="right_box">
+            <br>
+            <h2>Tistabane
+            </h2>
+            <br>
+            <h4>Mens black oversized shirt</h4>
+            <br>
+            <button id="rating"><i class="fa-solid fa-star" style="color: rgba(159, 159, 11, 0.795);"></i> 4.5</button>
+            <br><br>
+            <h2 class="prize">₹588 <p class="actual_rate"> ₹1199</p><p class="off">37% OFF</p></h2>
+            <p class="inclusive">inclusive of all taxes
+            </p>
+            <br>
+            <button class="shipping_box">Free Shipping Over ₹999</button>
+            <br>
+            <BR>
+            <h6><i class="fa-solid fa-location-dot"></i> CHECK DELIVERY AVAILABILITY</h6>
+            <input id="delivery_pin" type="number" placeholder="Enter Your Pincode" ><button onclick="Pincodevalidation()" class="check">Check</button><br>
+            <span id="messege"></span>
+            <br>
+            <details>
+               <summary>Product description</summary>
+               <p class="p_desc">Infuse your style with playful nostalgia in our Hang Men's Green & Black Checked Oversized Shirt. Style this Official Disney t-shirt with denim and sneakers for a casual look.
+               </p>
+               <p class="p_desc"><i>Country of Origin</i> - India<br>Manufactured By - Bewakoof Brands Pvt Ltd, Sairaj logistic hub #A5,BMC pipeline road, Opposite all saints high school, Amane, Bhiwandi, Thane, Maharashtra 421302<br>Packed By - Bewakoof Brands Pvt Ltd, Sairaj logistic hub #A5,BMC pipeline road, Opposite all saints high school, Amane, Bhiwandi, Thane, Maharashtra 421302<br>Commodity - Men's Shirt<br>Product Specifications<br>
+                  *Oversized fit - Super Loose On Body Thoda Hawa Aane De<br>*100% Cotton - Soft & light weight fabric
+               </p>
+            </details>
+            <details>
+               <summary>Know More About Return & Exchange</summary>
+               <p class="p_desc">15 Days Returns & Exchange<br>Easy returns upto 15 days of delivery. Exchange available on select pincodes
+               </p>
+            </details><br>
+            <i class="fa-solid fa-credit-card"></i> Secure Payment<br>
+            <i class="fa-solid fa-arrows-rotate"></i> Easy Return & Exchage<br>
+            <i class="fa-solid fa-medal"></i> Genuine Quality Products<br><br>
+            <button class="order_button"><i class="fa-solid fa-bolt"></i> Buy Now</button>  <button class="add_bag"><i class="fa-solid fa-bag-shopping"></i> Add To Bag</button>
+            <br><br>
+            <h3 class="review_head">Review</h3>
+            <i class="fa-solid fa-user-tie" style="padding-top: 7px;"></i> Nandhana Tiger <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star-half"></i><br><q style="font-size: small;"> Good Product,Adipoli..❤️</q>
+         </div>
+    </div>
+    <script>
+        function Pincodevalidation(){
+            pin=document.getElementById("delivery_pin").value;
+            if(pin>=100000 && pin<=999999)
+            {
+                document.getElementById("messege").innerHTML="Deliver Within 3-5 Working Days";
+            }
+            else
+            {
+               document.getElementById("messege").innerHTML="Currently Product Is Unavailable For Your Location";
+            }
+        }
+        function description(){
+            pin=document.getElementById("delivery_pin").value;
+            if(pin<99999)
+            {
+                document.getElementById("messege").innerHTML="Invalid Pincode Enter Your Excact Pincode";
+            }
+        }
+    </script>
+</body>
+</html>
